@@ -1,0 +1,17 @@
+<?php
+/*
+ Template Name: Login Page
+ */
+$args = array(
+'redirect' => site_url( $_SERVER['REQUEST_URI'] ),
+'form_id' => 'dangnhap', //Để dành viết CSS
+'label_username' => __( 'Tên tài khoản' ),
+'label_password' => __( 'Mật khẩu' ),
+'label_remember' => __( 'Ghi nhớ' ),
+'label_log_in' => __( 'Đăng nhập' ),
+);
+//get_header();
+wp_login_form();
+//get_footer();
+
+?>
