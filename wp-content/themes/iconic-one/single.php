@@ -12,7 +12,7 @@ get_header(); ?>
 		<div id="content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-<?php check_author_status(); ?>
+
 				<?php get_template_part( 'content', get_post_format() ); ?>
 				<nav class="nav-single">
 					<div class="assistive-text"><?php _e( 'Post navigation', 'themonic' ); ?></div>
